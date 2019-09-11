@@ -11,7 +11,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:ci": "react-scripts test --env=jsdom --testResultsProcessor ./node_modules/jest-junit --coverage --coverageDirectory=coverage",
+    "test:ci2":"jest --ci --reporters=default --reporters=jest-junit",
+    "test:ci": "react-scripts test –env=jsdom –reporters ./node_modules/jest-junit –coverage –coverageDirectory=coverage",
     "coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
   },
