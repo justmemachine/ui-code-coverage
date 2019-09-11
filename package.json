@@ -11,28 +11,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:ci":"react-scripts test --env=jsdom --reporters ./node_modules/jest-junit --coverage --coverageDirectory=coverage",
+    "test:ci": "jest --coverage",
     "coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "**/*.{js,jsx}",
-      "!**/node_modules/**",
-      "!**/build/**"
-    ],
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ]
-  },
-  "jest-junit": {
-    "suiteName": "jest tests",
-    "output": "coverage/junit.xml",
-    "classNameTemplate": "{classname} - {title}",
-    "titleTemplate": "{classname} - {title}",
-    "ancestorSeparator": " > ",
-    "usePathForSuiteName": "true"
   },
   "eslintConfig": {
     "extends": "react-app"

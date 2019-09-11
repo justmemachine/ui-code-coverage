@@ -1,4 +1,11 @@
-module.exports = 
-{
-    "reporters" : [ "default", "jest-junit" ]
-  }
+module.exports = {
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx}",
+  ],
+  "reporters" : [
+    ["jest-junit", {
+      "outputName": "junit.xml",
+      "outputDirectory": "coverage",
+    }],
+  ]
+}
